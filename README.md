@@ -6,7 +6,7 @@ Note that there is another repository for the nested association mapping populat
 
 ## Phenotypic data
 
-The phenotypic data used in this manuscript is from  [Moghadam et al. 2020](https://onlinelibrary.wiley.com/doi/full/10.1111/evo.14016) and consist of growth rate measurements of different strains of the filamentous fungus _Neurospora crassa_. This data is combined with SNP data for all of these strains to perform association mapping. The data is also available from [Dryad](https://doi.org/10.5061/dryad.pk0p2ngk9)
+The phenotypic data used in this manuscript is from  [Moghadam et al. 2020](https://onlinelibrary.wiley.com/doi/full/10.1111/evo.14016) and consist of growth rate measurements of different strains of the filamentous fungus _Neurospora crassa_. This data is combined with SNP data for all of these strains to perform association mapping. The data is also available from [Dryad](https://doi.org/10.5061/dryad.pk0p2ngk9). However, the most recent version of the data is file /data/
 
 ## Analysis scripts
 
