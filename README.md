@@ -34,3 +34,11 @@ In folder /scripts/ the script files are:
 3. tempasso.R
    - File that contains the R commands used for data analysis. Calculating growth rates, doing summary statistics, and analyzing the GWAS results.
 
+Some of the analyses such as LD calculations and GWAS itself have been performed on a national computer cluster the *.sh are script files that control the execuation of the R scripts on the cluster. In order to make the R scripts work in your environment, you would have to change input and output folders etc., but the commands can be looked at anyway.
+
+4. LD_calc.R and LD_calc.sh
+   - R script to sample 10 000 SNPs from each chromosome and calculates LD between them (chr by chr)
+5. LD_calc_fine.R and LD_calc_fine.sh
+   - R script to sample sets of SNPs evenly along the chromosomes and calculate LD between the sampled SNPs in each set
+6. The script files to perform GWAS are of the form: asso_gr20_new.R where 'gr20' is the environment (in this case growth rate at 20 degrees), and cluster control file is the form Rjob_gwas_gr20_new.sh. The 'gr20_umax' and 'gr40_umax' are for performing GWAS when using maximum growth rate as covariate
+
