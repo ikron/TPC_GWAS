@@ -10,7 +10,7 @@ The phenotypic data used in this manuscript is from  [Moghadam et al. 2020](http
 
 In folder /data/ the data files are:
 1. phenotypes.csv
-   - A csv file that contains the phenotypic measurements for each growth rate assay. The columns are: Block = experimental block, Temp = temperature, Family = To which family in the NAM population a strain belongs to (natural strains have 'O'), Genotype = name of the strain, tindex = index for time points, GCham = growth chamber, Replicate, replicate ID, t1 to 8 = values of many mm the mycelium has grown (the first time point should have a value of zero), Genot = name of the strain that corresponds to name in the genotype file
+   - A csv file that contains the phenotypic measurements for each growth rate assay. The columns are: Block = experimental block, Temp = temperature, Family = To which family in the NAM population a strain belongs to (natural strains have 'O'), Genotype = name of the strain, tindex = index for time points, GCham = growth chamber, Replicate, replicate ID, t1 to 8 = values of many mm the mycelium has grown (the first time point should have a value of zero), Genot = name of the strain that corresponds to name in the genotype file. This data is used to calculate growth rates can generate the 'genomeans.csv' file.
 2. genomeans.csv
    - A csv file that contains mean growth rates for all genotypes. Used as input data in GWAS. The columns are: Genot = name of the strain that corresponds to name in the genotype file, Temp = temperature, Family = To which family in the NAM population a strain belongs to (natural strains have 'O'), meanger = mean growth rate of the strain
 3. splineresults.csv
@@ -24,4 +24,13 @@ In folder /data/ the data files are:
 
 ## Analysis scripts
 
+Scripts used for data analysis
+
+In folder /scripts/ the script files are:
+1. Neuro_functions.R
+   - File that contains R scripts that are used in calculating growth rates, the are called from tempasso.R
+2. association_scripts.R
+   - File that contains R scripts that are used performing GWAS, these are called from tempasso.R
+3. tempasso.R
+   - File that contains the R commands used for data analysis. Calculating growth rates, doing summary statistics, and analyzing the GWAS results.
 
