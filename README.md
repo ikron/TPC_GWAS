@@ -42,3 +42,7 @@ Some of the analyses such as LD calculations and GWAS itself have been performed
    - R script to sample sets of SNPs evenly along the chromosomes and calculate LD between the sampled SNPs in each set
 6. The script files to perform GWAS are of the form: asso_gr20_new.R where 'gr20' is the environment (in this case growth rate at 20 degrees), and cluster control file is the form Rjob_gwas_gr20_new.sh. The 'gr20_umax' and 'gr40_umax' are for performing GWAS when using maximum growth rate as covariate
 
+## Intermediate .RData files
+
+In folder /RData/ there are intermediate files used in some of the analyses. Such as the SNPs sampled for LD calculations, significant SNPs etc. So that these can be viewed. See the R script tempasso.R where these are generated.
+
